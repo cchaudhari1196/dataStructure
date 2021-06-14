@@ -1,5 +1,7 @@
 package Stack;
 
+import java.util.ArrayDeque;
+import java.util.Deque;
 import java.util.Stack;
 
 public class StringReversal {
@@ -12,6 +14,7 @@ public class StringReversal {
 	
 	public static String reverse(String name) {
 		Stack<Character> stack = new Stack<Character>();
+//		Deque<Integer> stack = new ArrayDeque<Integer>();
 		for(Character c : name.toCharArray()) {
 			stack.push(c);
 		}
