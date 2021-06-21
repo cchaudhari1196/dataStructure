@@ -63,24 +63,7 @@ public class BinaryTreeMain {
 
 
 class Tree{
-	
-	
-	private class Node{
-		private Integer value;
-		private Node leftChild;
-		private Node rightChild;
 		
-		public Node(Integer value) {
-			this.value = value;
-		}
-		
-		@Override
-		public String toString() {
-			return "Node [value=" + value + "]";
-		}
-	}
-	
-	
 	private Node root;
 	
 	
@@ -342,6 +325,23 @@ class Tree{
 	public void levelOderTraversal() {
 		for(int i = 0; i <= height(); i++) {
 			printNodeAtKthNode(i);
+		}
+	}
+	
+	
+	
+	private class Node{
+		private Integer value;
+		private Node leftChild;
+		private Node rightChild;
+		
+		public Node(Integer value) {
+			this.value = value;
+		}
+		
+		@Override
+		public String toString() {
+			return "Node [value=" + value + "]";
 		}
 	}
 }
